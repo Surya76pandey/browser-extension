@@ -1,7 +1,5 @@
 
-*{
-    box-sizing: border-box;
-}
+
 
 body{
     --background-color: rgb(229, 241, 241);
@@ -56,4 +54,10 @@ body.dark{
 .inactive{
     justify-content: flex-start;
     background-color: rgb(83, 82, 82);    
+}
+
+#b-f{
+    box-shadow: inset 2px -6px 13px 0px #7a6e6e;
+    border-radius: 5px 5px 1px 1px;
+    color: (0.41 0.05 51.24);
 }

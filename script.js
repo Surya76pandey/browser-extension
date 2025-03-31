@@ -25,12 +25,12 @@ function renderCards(newStoredData) {
     const isActiveClass = extension.isActive ? '' : 'inactive';
 
     newCard.innerHTML = `
-      <div class="all-cards p-6 rounded-3xl max-w-[500px] h-[350px]">
-        <div id="card-details" class="flex items-start justify-between gap-5">
+      <div class="all-cards p-6 rounded-3xl max-w-[500px] h-[250px] sm:h-[350px]">
+        <div id="card-details" class="flex items-start justify-between gap-3 sm:gap-5">
           <img src="${extension.logo}" alt="" />
           <div id="extension-details">
-            <h2 class="extension-name font-bold text-[16px] md:text-xl mb-4">${extension.name}</h2>
-            <p class="text-[12px] sm:text-xl h-60">${extension.description}</p>
+            <h2 class="extension-name font-bold text-[12px] sm:text-[20px] mb-1">${extension.name}</h2>
+            <p class="text-[12px] sm:text-[20px] md:text-[16px] h-40 sm:h-60 text-wrap">${extension.description}</p>
           </div>
         </div>
         <div id="action" class="flex justify-between items-center p-1 sm:p-2 -mt-5">
