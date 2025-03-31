@@ -33,9 +33,9 @@ function renderCards(newStoredData) {
             <p class="text-[12px] sm:text-xl h-60">${extension.description}</p>
           </div>
         </div>
-        <div id="action" class="flex justify-between items-center p-1 sm:p-2 mt-5">
-          <span class="p-1 md:p-2 border-2 border-red-500 rounded-3xl">Remove</span>
-          <div class="flex justify-end bg-amber-600 w-12 sm:w-14 h-5 sm:h-7 rounded-full p-0.5 box-content toggled ${isActiveClass}">
+        <div id="action" class="flex justify-between items-center p-1 sm:p-2 -mt-5">
+          <span class="p-1 md:p-2 border-2 border-red-500 rounded-3xl cursor-pointer hover:border-green-400 hover:scale-[110%]">Remove</span>
+          <div class="flex justify-end bg-amber-600 w-12 sm:w-14 h-6 sm:h-8 rounded-full p-0.5 box-content toggled cursor-pointer ${isActiveClass}">
             <div id="circle" class="w-6 h-5 sm:w-7 sm:h-7 bg-white rounded-full my-auto"></div>
           </div>
         </div>
