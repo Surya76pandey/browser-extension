@@ -1,0 +1,54 @@
+body{
+    --background-color: rgb(229, 241, 241);
+    --text-color: black;
+    --elements-color: white;    
+    margin: 0;
+    font-family: nunito, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.dark{
+    --background-color: hsl(207, 26%, 17%);
+    --text-color: white;
+    --elements-color: hsl(209, 23%, 22%); 
+
+}
+
+
+.mode-switcher{
+    filter: brightness(100%);
+
+}
+
+#header-and-mode-management{
+    background-color: var(--elements-color);
+}
+
+
+#heading-text span{
+    background-color: var(--elements-color);
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.all-cards{
+    background-color: var(--elements-color);
+}
+#card p{
+    min-height: 150px;
+}
+
+
+@media(max-width:770px){
+    #card p{
+        min-height: 50px;
+    }
+}
+
+
+.inactive{
+    justify-content: flex-start;
+    background-color: rgb(83, 82, 82);    
+}
